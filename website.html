@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="e-book" content="web untuk e-book">
+    <title>website Sederhana</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>e-book murah dan ilmu ac klik dibawah ini!</h1>
+    <a href="http://www.lynk.id/a/8666683579" id="dynamic-link">klik yang ini</a>
+
+    <script>
+        // Anda dapat mengubah tautan di sini
+        document.getElementById('dynamic-link').href = "http://www.lynk.id/a/8666683579";
+        document.getElementById('dynamic-link').textContent = "klik disini!";
+    </script>
+</body>
+</html>
